@@ -21,6 +21,9 @@ app.get('/register',function(req,res){
         })
         res.send('Data received:\n' + JSON.stringify(req.body));
     })
+    app.get('/display',function(req,res){
+        res.render("display")
+    });
 
 app.listen(3000,function(){
     console.log('server is listening at port 3000')
