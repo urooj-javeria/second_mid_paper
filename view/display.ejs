@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css"/>
+    <title>Users</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>email</th>
+            <th>city</th>
+            <th>Phone</th>
+            <th>City</th>
+            <th>postcode</th>
+        </tr>
+        <% for(let i=0; i<user.length; i++){ %>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td><img src="/images/<%= user[i].image %>" alt="NA" width="70px"/></td>
+                <td><%=user[i].name%></td>
+                <td><%=user[i].phone%></td>
+                <td><%=user[i].city%></td>
+                <td><%=user[i].zip%></td>
+                
+            </tr>
+        <% } %>
+    </table>
+</body>
+</html>
